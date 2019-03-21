@@ -1,6 +1,14 @@
 .text-platzi{
     color: #97c93e !important;
 }
+.btn-platzi{
+    background-color: #97c93e;
+    color: white;
+}
+.btn-platzi:hover{
+    background-color: #7ca534;
+    color: white;
+}
 #footer{
     background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372);
     padding: 4px 0px 4px 0px;
@@ -10,6 +18,51 @@
     width: 80px;
 }
 
+main #carouselExampleControls img{
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%)
+}
+
 a{
+    color: white;
+}
+#carouselExampleControls{
+    position: relative;
+    -webkit-z-index: 0;
+    -moz-z-index: 0;
+    -ms-z-index: 0;
+    -o-z-index: 0;
+    z-index: 0;
+}
+
+#carouselExampleControls .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;    
+}
+
+.overlay .container, .overlay .container .row{
+    height: 100%;
+}
+.isIcon{
+    height: 30px;
+    filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.isIcon.tw{
+    filter: invert(.5) sepia(5) saturate(36) hue-rotate(165deg)
+}
+
+#place-time img{
+    max-width: 100%;
+}
+
+#place-time{
+    background-color: #343a40;
     color: white;
 }
